@@ -65,8 +65,6 @@ object PartitionPreservingOperation {
       case _: InputAdapter => true
       case _: GenerateExec => true
       case _: SerializeFromObjectExec => true
-      case _: ColumnarToRowExec => true
-      case _: RowToColumnarExec => true
       case _ => false
     }
   }
